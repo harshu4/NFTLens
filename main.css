@@ -1,0 +1,157 @@
+html {
+  width: 357px;
+  height: 600px;
+}
+
+body {
+  width: 357px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+.topnav {
+
+  background-color:   #C73A9D;
+  overflow: hidden;
+  margin-top: -10px;
+  border-end-end-radius: 15%;
+  border-end-start-radius: 15%;
+
+}
+.nft-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding: 10px;
+}
+
+.middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.signin {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.bar {
+  width: 10px;
+  height: 70px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  animation: loader 1.2s linear infinite;
+}
+.bar1 {
+  animation-delay: 0.1s;
+}
+.bar2 {
+  animation-delay: 0.2s;
+}
+.bar3 {
+  animation-delay: 0.3s;
+}
+.bar4 {
+  animation-delay: 0.4s;
+}
+.bar5 {
+  animation-delay: 0.5s;
+}
+.bar6 {
+  animation-delay: 0.6s;
+}
+.bar7 {
+  animation-delay: 0.7s;
+}
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+    /* background: ; */
+  }
+  50% {
+    transform: scaleY(1);
+    background: rebeccapurple;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    isolation: isolate;
+  }
+  
+  .box {
+    width: 0.5em;
+    
+    margin: 0.5rem;
+    position: relative;
+  }
+  
+  .box::before {
+    display: inline-block;
+   
+  }
+  
+  .box::after {
+    content: "";
+    display: block;
+    background: #05050f;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  
+  .border-bg {
+    border: solid 0.5rem;
+    border-image-source: linear-gradient(45deg, #C73A9Ded, blue);
+    border-image-slice: 1;
+    border-image-width: 1rem;
+    transition: border-image-source 1s linear;
+  }
+ .border-bg:hover {
+   
+
+
+    border-image-source: linear-gradient(45deg , #C73A9Ded,#C73A9Ded);
+  }
+  
+  .border-bg-select {
+   
+    border: solid 0.5rem;
+    border-image-slice: 1;
+    border-image-width: 1rem;
+    transition: border-image-source 1s linear;
+
+    border-image-source: linear-gradient(45deg , #ffff,#ffff);
+  }
+  
+
+  .clip-bg {
+    color: transparent;
+    color: rgba(0,0,0, .2);
+    background-image: linear-gradient(45deg,#C73A9D, blue);
+    background-clip: content-box; /* text property value not working in Edge 13*/
+    background-clip: text;
+  }
+  
